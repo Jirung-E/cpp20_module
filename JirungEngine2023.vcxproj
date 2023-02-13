@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Math.ixx" />
     <ClCompile Include="Math.Random.cpp" />
     <ClCompile Include="Math.Random.ixx" />
     <ClCompile Include="Math.Space-Point.cpp" />

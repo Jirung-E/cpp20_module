@@ -23,5 +23,5 @@ Point Math::Point::operator-(const Vector& vector) {
 }
 
 Point Point::randomPoint() {
-    return Point { random(-100.0, 100.0), random(-1.0, 1.0), random(-100.0, 100.0) };
+    return Point { random(-100.0, 100.0), random(-100.0, 100.0), random(-100.0, 100.0) };
 }

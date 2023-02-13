@@ -13,30 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{2d0f4860-14dd-43ae-b5c0-f85d213d5874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Random">
+      <UniqueIdentifier>{e35f7185-a006-4dcd-a920-7714aee6c91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Space">
+      <UniqueIdentifier>{8edb0ad3-3599-4c24-9f5d-c6109d66d4e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math.Space.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Math.Space-Vector.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Math.Space-Vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Math.Space-Point.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Math.Space-Point.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Math.Random.cpp">
+      <Filter>Source Files\Math\Random</Filter>
     </ClCompile>
     <ClCompile Include="Math.Random.ixx">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math\Random</Filter>
     </ClCompile>
-    <ClCompile Include="Math.Random.cpp">
+    <ClCompile Include="Math.Space.ixx">
+      <Filter>Source Files\Math\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Point.cpp">
+      <Filter>Source Files\Math\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Point.ixx">
+      <Filter>Source Files\Math\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Vector.cpp">
+      <Filter>Source Files\Math\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Vector.ixx">
+      <Filter>Source Files\Math\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
