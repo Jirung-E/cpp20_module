@@ -2,10 +2,9 @@ module Math.Space;
 
 import :Vector;
 import Math.Random;
+import <cmath>;
 
 using namespace Math;
-
-#include <cmath>
 
 
 Vector::Vector(const double& x, const double& y, const double& z) : x { x }, y { y }, z { z } {

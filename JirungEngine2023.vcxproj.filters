@@ -22,6 +22,39 @@
     <Filter Include="Source Files\Math\Space">
       <UniqueIdentifier>{8edb0ad3-3599-4c24-9f5d-c6109d66d4e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Math\Space\Vector">
+      <UniqueIdentifier>{1666802a-a1e6-47a1-98ab-2c21ba0691a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Space\Point">
+      <UniqueIdentifier>{8368d659-2ec8-4059-925c-1acf8aa81250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{5af2ae5c-1d67-4384-a92a-cf2c8972287b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\Input">
+      <UniqueIdentifier>{830cb4a5-2b33-42cd-9689-ef776c632025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\Output">
+      <UniqueIdentifier>{b529e009-207f-40d8-ad07-11b99c2a5cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\Input\Keyboard">
+      <UniqueIdentifier>{6199a398-9a55-41d5-9c31-19991dc3fd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\Output\ConsoleView">
+      <UniqueIdentifier>{dfee6ed5-e9ab-4109-b061-364f99b7e67f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Container">
+      <UniqueIdentifier>{53a73246-afc7-49ac-96a3-dc088c3cbffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic">
+      <UniqueIdentifier>{8b55119e-f890-45b5-ae89-31b3a27b8ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\Frame">
+      <UniqueIdentifier>{3b190124-4013-4336-b81f-f2f67ac8f764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphic\Pixel">
+      <UniqueIdentifier>{4a2ba9df-e552-48ee-8068-1ff58d9ec22a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,20 +69,64 @@
     <ClCompile Include="Math.Space.ixx">
       <Filter>Source Files\Math\Space</Filter>
     </ClCompile>
-    <ClCompile Include="Math.Space-Point.cpp">
-      <Filter>Source Files\Math\Space</Filter>
-    </ClCompile>
-    <ClCompile Include="Math.Space-Point.ixx">
-      <Filter>Source Files\Math\Space</Filter>
-    </ClCompile>
     <ClCompile Include="Math.Space-Vector.cpp">
-      <Filter>Source Files\Math\Space</Filter>
+      <Filter>Source Files\Math\Space\Vector</Filter>
     </ClCompile>
     <ClCompile Include="Math.Space-Vector.ixx">
-      <Filter>Source Files\Math\Space</Filter>
+      <Filter>Source Files\Math\Space\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Point.cpp">
+      <Filter>Source Files\Math\Space\Point</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.Space-Point.ixx">
+      <Filter>Source Files\Math\Space\Point</Filter>
     </ClCompile>
     <ClCompile Include="Math.ixx">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="IO.ixx">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Input.ixx">
+      <Filter>Source Files\IO\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Output.ixx">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Input-Keyboard.ixx">
+      <Filter>Source Files\IO\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Input-Keyboard.cpp">
+      <Filter>Source Files\IO\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Output-ConsoleView.ixx">
+      <Filter>Source Files\IO\Output\ConsoleView</Filter>
+    </ClCompile>
+    <ClCompile Include="Container.ixx">
+      <Filter>Source Files\Math\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic-Frame.ixx">
+      <Filter>Source Files\Graphic\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic-Frame.cpp">
+      <Filter>Source Files\Graphic\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic.ixx">
+      <Filter>Source Files\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic-Pixel.ixx">
+      <Filter>Source Files\Graphic\Pixel</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic-Pixel.cpp">
+      <Filter>Source Files\Graphic\Pixel</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Output-ConsoleView.cpp">
+      <Filter>Source Files\IO\Output\ConsoleView</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frame1">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

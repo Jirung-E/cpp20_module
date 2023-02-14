@@ -139,6 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Container.ixx" />
+    <ClCompile Include="Graphic-Frame.cpp" />
+    <ClCompile Include="Graphic-Frame.ixx" />
+    <ClCompile Include="Graphic-Pixel.cpp" />
+    <ClCompile Include="Graphic-Pixel.ixx" />
+    <ClCompile Include="Graphic.ixx" />
+    <ClCompile Include="IO.Input-Keyboard.ixx" />
+    <ClCompile Include="IO.Input.ixx" />
+    <ClCompile Include="IO.Input-Keyboard.cpp" />
+    <ClCompile Include="IO.ixx" />
+    <ClCompile Include="IO.Output-ConsoleView.cpp" />
+    <ClCompile Include="IO.Output-ConsoleView.ixx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math.ixx" />
     <ClCompile Include="Math.Random.cpp" />
@@ -148,6 +160,10 @@
     <ClCompile Include="Math.Space-Vector.ixx" />
     <ClCompile Include="Math.Space.ixx" />
     <ClCompile Include="Math.Space-Point.ixx" />
+    <ClCompile Include="IO.Output.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frame1" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
