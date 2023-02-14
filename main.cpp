@@ -40,20 +40,19 @@ int main() {
     while(true) {
         if(Keyboard::detected()) {
             int ch = Keyboard::get();
-            cout << ch << endl;
-            if(ch == 'a') {
+            //cout << ch << endl;
+            if(ch == 27) {
                 break;
             }
         }
-        else {
-            auto now = system_clock::now() - entry_time;
-            if(now >= 1000ms) {
-                system("cls");
-                cout << now << endl;
-                view.insert(frame, 10, 10);                                                         // TODO: 프레임을 파일로 저장, 불러와서 화면에 출력하기
-                view.show();
-                entry_time = system_clock::now();
-            }
+        auto now = system_clock::now();
+        size_t frame_per_sec = 60;
+        if(now-entry_time >= milliseconds(1000/frame_per_sec)) {
+            view.clear();
+            //cout << now-entry_time << endl;
+            view.insert(frame);
+            view.show();
+            entry_time = system_clock::now();
         }
     }
 

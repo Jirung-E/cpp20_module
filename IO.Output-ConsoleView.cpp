@@ -53,7 +53,7 @@ void ConsoleView::insert(const Graphic::Frame& frame, int x, int y) {
             if(vx<0 || vx>=width_max) {
                 continue;
             }
-            pixels[vy][vx]->set(frame.value(k, i));       // TODO: 위치 어긋나거나 해도 에러나지 않도록..
+            pixels[vy][vx]->set(frame.value(k, i));
         }
     }
 }
