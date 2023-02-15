@@ -17,18 +17,11 @@ namespace IO {
         char get() const;
     };
 
-    export class ConsoleView {
-    private:
-        const unsigned short int width_max;
-        const unsigned short int height_max;
-        std::vector<std::vector<Graphic::Pixel*>> pixels;
-
+    export class ConsoleView : public Graphic::View {
     public:
         ConsoleView(const unsigned short int& width, const unsigned short int& height);
 
     public:
         void show() const;
-        void insert(const Graphic::Frame& frame, int x=0, int y=0);
-        void clear();
     };
 }

@@ -144,6 +144,8 @@
     <ClCompile Include="Graphic-Frame.ixx" />
     <ClCompile Include="Graphic-Pixel.cpp" />
     <ClCompile Include="Graphic-Pixel.ixx" />
+    <ClCompile Include="Graphic-View.cpp" />
+    <ClCompile Include="Graphic-View.ixx" />
     <ClCompile Include="Graphic.ixx" />
     <ClCompile Include="IO.Input-Keyboard.ixx" />
     <ClCompile Include="IO.Input.ixx" />
