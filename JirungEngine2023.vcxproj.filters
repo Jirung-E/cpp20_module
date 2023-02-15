@@ -123,6 +123,12 @@
     <ClCompile Include="IO.Output-ConsoleView.cpp">
       <Filter>Source Files\IO\Output\ConsoleView</Filter>
     </ClCompile>
+    <ClCompile Include="IO.Output-Print.ixx">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Output-Print.cpp">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="frame1">

@@ -1,7 +1,7 @@
 module IO.Output;
 
 import :ConsoleView;
-import <iostream>;
+import :Print;
 
 using namespace std;
 using namespace IO;
@@ -36,9 +36,9 @@ ConsoleView::ConsoleView(const unsigned short int& width, const unsigned short i
 void ConsoleView::show() const {
     for(const std::vector<Pixel*>& e : pixels) {
         for(Pixel* p : e) {
-            cout << dynamic_cast<ConsolePixel*>(p)->get();
+            print(dynamic_cast<ConsolePixel*>(p)->get());
         }
-        cout << endl;
+        println("");
     }
 }
 
@@ -58,6 +58,10 @@ void ConsoleView::insert(const Graphic::Frame& frame, int x, int y) {
     }
 }
 
-void ConsoleView::clear() const {
-    system("cls");
+void ConsoleView::clear() {
+    for(vector<Pixel*>& e : pixels) {
+        for(Pixel* p : e) {
+            p->set(0, 0, 0);
+        }
+    }
 }

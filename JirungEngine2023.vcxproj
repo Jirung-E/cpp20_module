@@ -151,6 +151,8 @@
     <ClCompile Include="IO.ixx" />
     <ClCompile Include="IO.Output-ConsoleView.cpp" />
     <ClCompile Include="IO.Output-ConsoleView.ixx" />
+    <ClCompile Include="IO.Output-Print.cpp" />
+    <ClCompile Include="IO.Output-Print.ixx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Math.ixx" />
     <ClCompile Include="Math.Random.cpp" />

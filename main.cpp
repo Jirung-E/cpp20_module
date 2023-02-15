@@ -48,7 +48,8 @@ int main() {
         auto now = system_clock::now();
         size_t frame_per_sec = 60;
         if(now-entry_time >= milliseconds(1000/frame_per_sec)) {
-            view.clear();
+            //view.clear();
+            clear();
             //cout << now-entry_time << endl;
             view.insert(frame);
             view.show();

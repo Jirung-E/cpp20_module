@@ -29,6 +29,6 @@ namespace IO {
     public:
         void show() const;
         void insert(const Graphic::Frame& frame, int x=0, int y=0);
-        void clear() const;
+        void clear();
     };
 }
