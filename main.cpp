@@ -18,13 +18,14 @@ int main() {
     Frame frame { "frame1" };
     //frame.set(5, 5, "2:4:0");
     //frame.saveAs("frame1");
+    view.insert(frame);
 
     auto entry_time = system_clock::now();
     while(true) {
         if(Keyboard::detected()) {
             int ch = Keyboard::get();
             //cout << ch << endl;
-            if(ch == 27) {
+            if(ch == KEY::ESC) {
                 break;
             }
         }
@@ -34,11 +35,11 @@ int main() {
             //view.clear();
             clear();
             //cout << now-entry_time << endl;
-            view.insert(frame);
+            //view.insert(frame);
             view.show();
             entry_time = system_clock::now();
         }
     }
 
-    cout << "Bye~" << endl;
+    println("Bye~");
 }
