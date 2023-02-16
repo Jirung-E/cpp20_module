@@ -15,7 +15,6 @@ namespace Graphic {
 
     public:
         Pixel(int r_max, int g_max, int b_max);
-        Pixel(const std::string& value);
         Pixel();
 
     public:

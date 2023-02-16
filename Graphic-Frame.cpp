@@ -34,7 +34,8 @@ Frame::Frame(const std::string& file_name) {
 
         size_t i = 0;
         while(regex_search(buff, match, re)) {
-            pixels[line].push_back(new Pixel { match.str() });
+            pixels[line].push_back(new Pixel { });
+            pixels[line][i++]->set(match.str());
             buff = match.suffix();
         }
         line++;
