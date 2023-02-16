@@ -16,6 +16,10 @@ Pixel::Pixel() : Pixel { numeric_limits<int>::max(), numeric_limits<int>::max(),
 
 }
 
+Pixel::Pixel(const string& value) : Pixel { } {
+    set(value);
+}
+
 
 string Pixel::value() const {
     return format("{:X}:{:X}:{:X}", r, g, b);
