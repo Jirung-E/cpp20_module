@@ -19,7 +19,11 @@ void ConsolePixel::set(int value) {
 }
 
 char ConsolePixel::get() const {
-    return pixel_set[(r+g+b)/3];
+    int res = static_cast<int>(static_cast<long int>(r) + static_cast<long int>(g) + static_cast<long int>(b)) / 3;   // 최댓값을 가질때, int인체로 그냥 합쳐버리변 overflow 발생하므로, 형변환 해줌
+    if(res >= pixel_set.size()) {
+        return pixel_set[pixel_set.size()-1];
+    }
+    return pixel_set[res];
 }
 // --------------------------------------------------------------------------
 
