@@ -49,6 +49,12 @@ string Frame::value(const unsigned short int& x, const unsigned short int& y) co
 }
 
 void Frame::set(const unsigned short int& x, const unsigned short int& y, const string& value) {
+    if(x >= width()) {
+        return;
+    }
+    if(y >= height()) {
+        return;
+    }
     pixels[y][x]->set(value);
 }
 
