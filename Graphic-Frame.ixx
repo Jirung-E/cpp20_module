@@ -1,8 +1,8 @@
 export module Graphic:Frame;
 
-import Container;
 import :Pixel;
 import <string>;
+import <vector>;
 
 
 namespace Graphic {

@@ -1,7 +1,7 @@
 export module IO.Output:ConsoleView;
 
-import Container;
 import Graphic;
+import <vector>;
 
 
 namespace IO {

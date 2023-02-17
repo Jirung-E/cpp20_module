@@ -2,7 +2,7 @@ export module Graphic:View;
 
 import :Pixel;
 import :Frame;
-import Container;
+import <vector>;
 
 
 namespace Graphic {

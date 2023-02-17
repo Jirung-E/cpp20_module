@@ -40,9 +40,6 @@
     <Filter Include="Source Files\IO\Input\Keyboard">
       <UniqueIdentifier>{6199a398-9a55-41d5-9c31-19991dc3fd0a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Math\Container">
-      <UniqueIdentifier>{53a73246-afc7-49ac-96a3-dc088c3cbffb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Graphic">
       <UniqueIdentifier>{8b55119e-f890-45b5-ae89-31b3a27b8ba0}</UniqueIdentifier>
     </Filter>
@@ -104,9 +101,6 @@
     </ClCompile>
     <ClCompile Include="IO.Output-ConsoleView.ixx">
       <Filter>Source Files\IO\Output\ConsoleView</Filter>
-    </ClCompile>
-    <ClCompile Include="Container.ixx">
-      <Filter>Source Files\Math\Container</Filter>
     </ClCompile>
     <ClCompile Include="Graphic-Frame.ixx">
       <Filter>Source Files\Graphic\Frame</Filter>

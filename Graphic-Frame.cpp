@@ -1,12 +1,13 @@
 module Graphic;
 
 import :Frame;
+import IO.Output;
 import <fstream>;
-import <iostream>;
 import <regex>;
 
 using namespace std;
 using namespace Graphic;
+using namespace IO;
 
 
 Frame::Frame(const unsigned short int& width, const unsigned short int& height) : pixels { height, vector<Pixel*> { } } {
@@ -20,7 +21,7 @@ Frame::Frame(const unsigned short int& width, const unsigned short int& height) 
 Frame::Frame(const std::string& file_name) {
     ifstream ifs { file_name };
     if(ifs.fail()) {
-        cout << "No such file - \"" + file_name + "\"\n";
+        println("No such file - \"" + file_name + "\"");
         return;
     }
 

@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Container.ixx" />
     <ClCompile Include="Graphic-Frame.cpp" />
     <ClCompile Include="Graphic-Frame.ixx" />
     <ClCompile Include="Graphic-Pixel.cpp" />
