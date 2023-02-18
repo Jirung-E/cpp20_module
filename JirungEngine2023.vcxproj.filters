@@ -55,6 +55,9 @@
     <Filter Include="Source Files\Graphic\View">
       <UniqueIdentifier>{d4f2d4c6-5ed4-4285-8e34-9af427955593}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\IO\Output\Print">
+      <UniqueIdentifier>{061cb51e-a62d-4ea6-8f4b-ad707673f264}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -120,21 +123,24 @@
     <ClCompile Include="IO.Output-ConsoleView.cpp">
       <Filter>Source Files\IO\Output\ConsoleView</Filter>
     </ClCompile>
-    <ClCompile Include="IO.Output-Print.ixx">
-      <Filter>Source Files\IO\Output</Filter>
-    </ClCompile>
-    <ClCompile Include="IO.Output-Print.cpp">
-      <Filter>Source Files\IO\Output</Filter>
-    </ClCompile>
     <ClCompile Include="Graphic-View.ixx">
       <Filter>Source Files\Graphic\View</Filter>
     </ClCompile>
     <ClCompile Include="Graphic-View.cpp">
       <Filter>Source Files\Graphic\View</Filter>
     </ClCompile>
+    <ClCompile Include="IO.Output-Print.cpp">
+      <Filter>Source Files\IO\Output\Print</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.Output-Print.ixx">
+      <Filter>Source Files\IO\Output\Print</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="frame1">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="circle">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
