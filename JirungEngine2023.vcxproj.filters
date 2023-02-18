@@ -143,5 +143,8 @@
     <None Include="circle">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="graph">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
