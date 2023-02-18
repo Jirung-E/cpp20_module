@@ -32,9 +32,9 @@ int main() {
         size_t frame_per_sec = 60;
         if(diff >= 1000/frame_per_sec) {
             auto sec = (now - o).count() / 10'000;      // -> milliseconds
-            double rps = 2;                             // round per sec
-            int x = 15 + round(10 * sin(rps * (sec / 1'000.0) * 2*numbers::pi));
-            int y = 10 + round(5 * cos(rps * (sec / 1'000.0) * 2*numbers::pi));
+            double rps = 0.25;                          // round per sec
+            int x = 15 + round(10 * cos(rps * (sec / 1'000.0) * 2*numbers::pi));
+            int y = 10 + round(5 * sin(rps * (sec / 1'000.0) * 2*numbers::pi));
             frame_view.set(x, y, "F:F:F");
             frame.set(x, y, "F:F:F");
             view.insert(frame_view);
