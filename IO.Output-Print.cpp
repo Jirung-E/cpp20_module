@@ -22,4 +22,8 @@ namespace IO {
     void clear() {
         system("cls");
     }
+    
+    void setCursorPosition(const unsigned short int& x, const unsigned short int& y) {
+        printf("%c[%d;%df", 0x1B, y, x);
+    }
 }
