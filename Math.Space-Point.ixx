@@ -12,7 +12,7 @@ namespace Math {
 
     public:
         Point() = default;
-        Point(const double& x, const double& y, const double& z);
+        Point(const double& x, const double& y, const double& z=0);
         Vector operator-(const Point& other);
         Point operator+(const Vector& vector);
         Point operator-(const Vector& vector);

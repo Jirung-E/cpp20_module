@@ -10,7 +10,7 @@ namespace Math {
 
     public:
         Vector() = default;
-        Vector(const double& x, const double& y, const double& z);
+        Vector(const double& x, const double& y, const double& z=0);
         Vector operator+(const Vector& other) const;
         Vector operator-(const Vector& other) const;
         Vector operator/(const double& value) const;
