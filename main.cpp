@@ -41,6 +41,6 @@ int main() {
             entry_time = now;
         }
     }
-
+     
     println("Bye~");
 }
