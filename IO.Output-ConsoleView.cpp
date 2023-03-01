@@ -9,7 +9,7 @@ using namespace Graphic;
 
 
 // ------------------------------ ConsolePixel ------------------------------
-ConsolePixel::ConsolePixel() : Pixel { pixel_set.size()-1, pixel_set.size()-1, pixel_set.size()-1 } {
+ConsolePixel::ConsolePixel() : Pixel { } {
     //set(5);
 }
 
@@ -40,9 +40,10 @@ ConsoleView::ConsoleView(const unsigned short int& width, const unsigned short i
 
 void ConsoleView::show() const {
     for(const vector<Pixel*>& e : pixels) {
+        print('|');
         for(Pixel* p : e) {
-            print(dynamic_cast<ConsolePixel*>(p)->get());
+            print(string(" ") + dynamic_cast<ConsolePixel*>(p)->get());
         }
-        println("");
+        println("|");
     }
 }

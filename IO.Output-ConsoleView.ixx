@@ -6,7 +6,7 @@ import <vector>;
 
 namespace IO {
     // Do not export
-    const std::vector<char> pixel_set { ' ', '.', ':', 'i', 'l', 'I', '%' };
+    const std::vector<char> pixel_set { ' ', '.', ',', ':', ';', 'i', 'j', 'I', '%' };
 
     class ConsolePixel : public Graphic::Pixel {
     public:

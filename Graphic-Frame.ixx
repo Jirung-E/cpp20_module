@@ -17,6 +17,7 @@ namespace Graphic {
     public:
         std::string value(const unsigned short int& x, const unsigned short int& y) const;
         void set(const unsigned short int& x, const unsigned short int& y, const std::string& value);
+        void paste(const Frame& other, const unsigned short int& x, const unsigned short int& y);
 
         int width() const;
         int height() const;

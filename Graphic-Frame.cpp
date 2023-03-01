@@ -58,6 +58,22 @@ void Frame::set(const unsigned short int& x, const unsigned short int& y, const 
     pixels[y][x]->set(value);
 }
 
+void Frame::paste(const Frame& other, const unsigned short int& x, const unsigned short int& y) {
+    for(int i=0; i<other.height(); ++i) {
+        int vy = y+i;
+        if(vy<0 || vy>=height()) {
+            continue;
+        }
+        for(int k=0; k<other.width(); ++k) {
+            int vx = x+k;
+            if(vx<0 || vx>=width()) {
+                continue;
+            }
+            pixels[vy][vx]->set(other.value(k, i));
+        }
+    }
+}
+
 int Frame::width() const {
     return pixels[0].size();
 }
